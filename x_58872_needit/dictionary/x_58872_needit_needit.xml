@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="3" type="collection">
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="4" type="collection">
         <element label="New field 1" max_length="40" name="new_field_1" type="integer"/>
         <element label="New field 2" max_length="40" name="u_new_field_2" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Other too" max_length="40" name="u_other_too" type="string"/>
         <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Requested for email" mandatory="true" max_length="40" name="u_requested_for_email" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="hospitality" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
@@ -21,7 +22,9 @@
                 <element inactive_on_update="false" label="Facilities 2" sequence="3" value="facilities2"/>
                 <element inactive_on_update="false" label="Human Resources 1" sequence="4" value="hr1"/>
                 <element inactive_on_update="false" label="Human Resources 2" sequence="5" value="hr2"/>
-                <element inactive_on_update="false" label="Other" sequence="6" value="other"/>
+                <element inactive_on_update="false" label="Hospitality 1" sequence="6" value="hospitality1"/>
+                <element inactive_on_update="false" label="Hospitality 2" sequence="7" value="hospitality2"/>
+                <element inactive_on_update="false" label="Other" sequence="8" value="other"/>
             </choice>
         </element>
         <element label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
